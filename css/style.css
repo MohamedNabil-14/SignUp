@@ -1,0 +1,82 @@
+body {
+  background-color: #24353f;
+  font-family: sans-serif;
+}
+
+.container1 {
+  width: 55%;
+  background-color: #24353f;
+}
+
+h1 {
+  color: #17a2b8;
+}
+
+.form-control {
+  background-color: transparent !important ;
+  color: fffff !important ;
+  border-color: #ced4da !important;
+  border-width: 1px !important;
+  width: 100%;
+  padding: 15px;
+  border-radius: 3px;
+  color: white !important;
+  font-family: sans-serif;
+}
+
+.form-control:focus {
+  border-color: #80bdff !important;
+}
+input:focus {
+  box-shadow: 0 0 0 0 transparent !important;
+}
+
+.form-control::placeholder {
+  color: #ced4da;
+}
+
+.signUpA {
+  color: #80bdff;
+  height: fit-content;
+  font-size: 17px;
+  transition: 0.75s;
+}
+.signUpA:hover {
+  color: #17a2b8 !important ;
+}
+
+.shadow-lg {
+  box-shadow: 5px 5px 40px 2px #121b20 !important;
+}
+
+.icon {
+  font-size: 22px;
+}
+.background-color {
+  background-color: #24353f;
+}
+
+.hide {
+  display: none;
+}
+.show {
+  display: flex;
+}
+.section2 {
+  height: 100vh;
+}
+
+p {
+  color: #17a2b8;
+}
+#showLogInPasswordIcon {
+  bottom: 27px;
+  left: 685px;
+  color: rgb(163, 162, 162);
+}
+
+#showSignUpPasswordIcon {
+  bottom: 27px;
+  left: 685px;
+  color: rgb(163, 162, 162);
+}

@@ -1,0 +1,203 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    
+    <section class="show" id="logInSection">     <!-- Login page -->
+      
+      <div class="container container1 shadow-lg p-5 my-5">
+        <h1 class="mb-5 text-center">Smart Login System</h1>
+
+        <div class="form-group">
+          <input
+            type="email"
+            class="form-control"
+            placeholder="Enter your email"
+            id="emailInput"
+          />
+        </div>
+        <div
+          id="signInEmailInvalidAlert"
+          class="hide alert-danger mb-2 p-1 rounded"
+          role="alert"
+        >
+          <p class="text-danger">invalid email address!</p>
+        </div>
+
+        <div class="form-group">
+          <input
+            type="password"
+            class="form-control"
+            placeholder="Enter your password"
+            id="passwordInput"
+          />
+          <i
+            id="showLogInPasswordIcon"
+            class="far fa-eye-slash position-relative"
+          ></i>
+        </div>
+        <div
+          id="signInPasswordInvalidAlert"
+          class="hide alert-danger mb-2 p-1 rounded"
+          role="alert"
+        >
+          <p class="text-danger">Please enter your password</p>
+        </div>
+        <div
+          id="IncorrectdAlert"
+          class="hide alert-danger p-3 mt-3 rounded"
+          role="alert"
+        >
+          <div class="mt-1">Incorrect email or password</div>
+          <i class="fas fa-exclamation-circle fa-2x ml-2"></i>
+        </div>
+
+        <button class="w-100 mt-4 btn btn-outline-info" id="logInButton">
+          Log in
+        </button>
+        <div class="row justify-content-center mt-3 text-white">
+          <p class="d-inline-block text-white">Don’t have an account?</p>
+          <a
+            href="#"
+            class="d-inline-block ml-2 text-decoration-none signUpA"
+            id="signUpLink"
+            >Sign Up</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="hide" id="signUpSection">    <!-- Sign up page -->
+      
+      <div class="container container1 shadow-lg p-5 my-5">
+        <h1 class="mb-5 text-center">Smart Login System</h1>
+
+        <div class="form-group">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Enter your name"
+            id="signUpNameInput"
+          />
+        </div>
+        <div
+          id="signUpNameInvalidAlert"
+          class="hide alert-danger mb-2 p-1 rounded"
+          role="alert"
+        >
+          <p class="text-danger">
+            your name must have only letters, you can add one space between
+            them.
+          </p>
+        </div>
+
+        <div class="form-group">
+          <input
+            type="email"
+            class="form-control"
+            placeholder="Enter your email"
+            id="signUpMailInput"
+          />
+        </div>
+        <div
+          id="registeredMailAlert"
+          class="hide alert-danger mb-2 p-1 rounded"
+          role="alert"
+        >
+          <p class="text-danger">this email is already registered!</p>
+        </div>
+        <div
+          id="signUpEmailInvalidAlert"
+          class="hide alert-danger mb-2 p-1 rounded"
+          role="alert"
+        >
+          <p class="text-danger">invalid email address!</p>
+        </div>
+
+        <div class="form-group">
+          <input
+            type="password"
+            class="form-control"
+            placeholder="Enter your password"
+            id="signUpPasswordInput"
+          />
+
+          <i
+            id="showSignUpPasswordIcon"
+            class="far fa-eye-slash position-relative"
+          ></i>
+        </div>
+        <div
+          id="signUpPasswordInvalidAlert"
+          class="hide alert-danger mb-2 p-1 rounded"
+          role="alert"
+        >
+          <p class="text-danger">
+            the password must have at least 8 characters, including
+            uppercase(A-Z), lowercase(a-z), and numbers.
+          </p>
+        </div>
+
+        <button class="w-100 mt-4 btn btn-outline-info" id="signUpButton">
+          Sign Up
+        </button>
+        <div class="row justify-content-center mt-3 text-white">
+          <p class="d-inline-block text-white">You have an account?</p>
+          <a
+            href="#"
+            class="d-inline-block ml-2 text-decoration-none signUpA"
+            id="logInLink"
+            >Log in</a
+          >
+        </div>
+        <div
+          id="signUpFailedAlert"
+          class="hide alert-danger mb-2 p-1 rounded"
+          role="alert"
+        >
+          <p class="text-danger fa-2x mx-auto">
+            Sign up is failed <i class="far fa-frown"></i>
+          </p>
+        </div>
+        <div
+          id="signUpCompleteAlert"
+          class="hide alert alert-success text-center"
+          role="alert"
+        >
+          <div class="mt-1 text-center ml-2">Sign Up Complete</div>
+          <i class="far fa-grin fa-2x ml-2"></i>
+        </div>
+      </div>
+    </section>
+
+    <section class="section2 justify-content-center align-items-center hide" id="welcomeSection">      <!-- Home page -->
+      <div class="shadow-lg fixed-top background-color">
+        <div class="container row justify-content-between p-2 mx-auto">
+          <a href="#" class="icon text-decoration-none text-white mt-1"
+            >SMART LOGIN</a
+          >
+          <button class="btn btn-outline-primary p-2" id="logOutButton">
+            Log out
+          </button>
+        </div>
+      </div>
+      <div id="welcomeUserP">
+        <!-- <p class="fa-3x  text-center mt-5  p-5 shadow-lg ">Welcome  </p> -->
+      </div>
+    </section>
+
+
+
+
+
+
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
